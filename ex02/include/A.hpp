@@ -6,17 +6,17 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:12 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 15:01:27 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/02 08:39:30 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/main.hpp"
+#ifndef A_HPP
+#define A_HPP
 
-class A
+#include "Base.hpp"
+
+class A : public Base
 {
-private:
-    /* data */
-public:
-    A(/* args */);
-    ~A();
 };
+
+#endif

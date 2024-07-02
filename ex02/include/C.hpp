@@ -6,18 +6,18 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:18 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 15:01:17 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/02 08:39:14 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/main.hpp"
+#ifndef C_HPP
+#define C_HPP
 
+#include "Base.hpp"
 
-class C
+class C : public Base
 {
-private:
-    /* data */
-public:
-    C(/* args */);
-    ~C();
 };
+
+
+#endif

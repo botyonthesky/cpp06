@@ -6,25 +6,18 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:16 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 15:01:33 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/02 08:51:06 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/main.hpp"
+#ifndef BASE_HPP
+#define BASE_HPP
 
 class Base
 {
-private:
-    /* data */
-public:
-    Base(/* args */);
-    ~Base();
+    public:
+        virtual ~Base(); 
 };
 
-Base::Base(/* args */)
-{
-}
 
-Base::~Base()
-{
-}
+#endif

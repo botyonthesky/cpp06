@@ -5,17 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/01 14:57:09 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 15:01:39 by tmaillar         ###   ########.fr       */
+/*   Created: 2024/07/02 08:47:19 by tmaillar          #+#    #+#             */
+/*   Updated: 2024/07/02 08:47:41 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/Base.hpp"
 
-Base::Base(/* args */)
-{
-}
-
 Base::~Base()
 {
+    
 }

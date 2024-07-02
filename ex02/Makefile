@@ -6,7 +6,7 @@
 #    By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/01 14:55:46 by tmaillar          #+#    #+#              #
-#    Updated: 2024/07/01 14:56:04 by tmaillar         ###   ########.fr        #
+#    Updated: 2024/07/02 08:48:00 by tmaillar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ CPPFLAGS		+= -MMD -MP -MF $(@:.o=.d)
 SRC_DIR			:= ./src
 OBJ_DIR			:= ./obj
 
-ROOT_SRC		:=	Serializer.cpp \
+ROOT_SRC		:=	Base.cpp \
 					main.cpp
 
 ROOT_DIR		:= $(SRC_DIR)

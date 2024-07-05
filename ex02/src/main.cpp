@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:32 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/02 08:58:38 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/05 07:46:29 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,14 +109,17 @@ void    identify(Base& p)
 int main()
 {
     Base* base1;
-
-    std::cout << "Base 1" << std::endl;
     base1 = generate();
-    identify(base1);
+    try
+    {
+        identify(base1);
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << std::endl;
+        return (1);
+    }
     identify(*base1);
-    std::cout << std::endl;
-
     delete base1;
-    
     return (0);
 }

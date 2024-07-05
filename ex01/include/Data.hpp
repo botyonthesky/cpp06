@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:21:08 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 14:30:50 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/05 07:20:46 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ struct Data
     std::string name;
     int         id;
 };
-
-
 
 
 #endif

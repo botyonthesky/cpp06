@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 08:21:49 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/01 13:23:07 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/05 07:10:59 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,8 @@ ScalarConverter::~ScalarConverter()
 {
     std::cout << "Scalar Converter destructor" << std::endl;
 }
-bool    ScalarConverter::isPrintable(int c)
-{
-    if (!isprint(c))
-        return (false);
-    return (true);
-}
 
-void    ScalarConverter::toChar(long double& num)
+void    ScalarConverter::toChar(const long double& num)
 {
     std::cout << "char: ";
     int numInt;
@@ -51,12 +45,10 @@ void    ScalarConverter::toChar(long double& num)
     if (num != numInt || num < 0)
     {
         std::cout << "impossible" << std::endl;
-        return ;
     }   
     else if (num >= 32 && num <= 126)
     {
         std::cout << "'" << c << "'" << std::endl;
-        return ;
     }
     else if (num <= 255)
         std::cout << "Non displayable" << std::endl;
@@ -108,8 +100,6 @@ void    ScalarConverter::toDouble(const long double& num)
 
 void ScalarConverter::convert(std::string src)
 {   
-    if (src == "f")
-        std::cout << "Invalid input" << std::endl;
     long double num;
     num = 0;
     char* end;
@@ -126,8 +116,6 @@ void ScalarConverter::convert(std::string src)
         toFloat(num);
         toDouble(num);
     }
-
-    
-
-    
+    else
+        std::cout << "Invalid input" << std::endl;
 }

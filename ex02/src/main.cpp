@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:32 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/05 08:39:03 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/05 08:46:50 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,6 @@ void    identify(Base& p)
     }
 }
 
-
 int main()
 {
     try
@@ -128,7 +127,5 @@ int main()
     {
         std::cerr << "Memory allocation failed : " << e.what() << std::endl;
     }
-    
-    
     return (0);
 }

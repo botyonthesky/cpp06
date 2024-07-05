@@ -6,7 +6,7 @@
 /*   By: tmaillar <tmaillar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/01 14:57:32 by tmaillar          #+#    #+#             */
-/*   Updated: 2024/07/05 07:46:29 by tmaillar         ###   ########.fr       */
+/*   Updated: 2024/07/05 08:39:03 by tmaillar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,18 +108,27 @@ void    identify(Base& p)
 
 int main()
 {
-    Base* base1;
-    base1 = generate();
     try
     {
-        identify(base1);
+        Base* base1;
+        base1 = generate();
+        try
+        {
+            identify(base1);
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << std::endl;
+            return (1);
+        }
+        identify(*base1);
+        delete base1;
     }
-    catch(const std::exception& e)
+    catch(const std::bad_alloc& e)
     {
-        std::cerr << e.what() << std::endl;
-        return (1);
+        std::cerr << "Memory allocation failed : " << e.what() << std::endl;
     }
-    identify(*base1);
-    delete base1;
+    
+    
     return (0);
 }
